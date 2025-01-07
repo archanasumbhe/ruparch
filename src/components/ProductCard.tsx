@@ -1,6 +1,18 @@
 import React from "react";
 
-const ProductCard : React.FC = ({product}) =>{
+export type Product = {
+    image: string,
+    brand: string,
+    description: string,
+    price: number
+}
+
+type Props = {
+    product: Product
+}
+
+const ProductCard = (props: Props) =>{
+    const {product} = props
     return(
         <div className="productCard">
             <img src={product?.image} alt="dressImg" />

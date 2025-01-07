@@ -1,6 +1,6 @@
 import React from "react";
 import './ProductList.scss'
-import ProductCard from "../../components/ProductCard";
+import ProductCard, { Product } from "../../components/ProductCard";
 import { useParams } from "react-router-dom";
 import {womenShopping,menShopping} from "../../data/Products"
 
@@ -8,7 +8,7 @@ const ProductList: React.FC = () => {
 
 const { category } = useParams(); 
 
-  const products = category === "Men" ? menShopping : womenShopping;
+  const products: Product[]  = category === "Men" ? menShopping : womenShopping;
   return (
     <div className="listingContainer">
     <div className="listWrapper">
