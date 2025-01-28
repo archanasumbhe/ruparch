@@ -4,6 +4,7 @@ import manShopping from "../../assets/manShopping.webp"
 import womanShopping from "../../assets/womanShopping.png"
 import banner from "../../assets/banner.jpg"
 import { useNavigate } from "react-router-dom";
+import { Header } from "../../components/Header/Header";
 
 const Home : React.FC = () =>{
     const navigate = useNavigate()
@@ -13,6 +14,7 @@ const Home : React.FC = () =>{
     }
     return(
         <div className="homeContainer">
+        <Header/>
             <div className="bannerContainer">
                 <img src={banner} alt="banner" />
             </div>
