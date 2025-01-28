@@ -1,22 +1,27 @@
-.productDetailsContainer{
+.productDetailsContainer {
     display: flex;
     gap: 40px;
-    // .productImages{
-    //         width: 70%;
-    //     img{
-    //         width: 50%;
-    //     }
-    // }
-         img {
-             width: 50%;
-         }
-    .productDetails{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            width: 50%;
-            
-        h1{
+    max-width: 1600px;
+    min-width: 1128px;
+    margin: 20px auto 0;
+
+    .productImages {
+
+        width: 58%;
+
+        img {
+            width: 100%;
+
+        }
+    }
+
+    .productDetails {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 42%;
+
+        h1 {
             color: #020617;
             font-family: Poppins;
             font-size: 29px;
@@ -26,20 +31,23 @@
             letter-spacing: -0.28px;
             margin: 0;
         }
-        .description{
+
+        .description {
             color: #535665;
             padding: 5px 20px 8px 0;
             font-size: 20px;
             opacity: .8;
             font-weight: 400;
         }
+
         .lineBreak {
             width: 100%;
             height: 1px;
             background: rgba(0, 0, 0, 0.20);
             margin: 6px 0px;
         }
-        .price{
+
+        .price {
             color: #282c3f;
             font-family: Poppins;
             font-size: 22px;
@@ -48,6 +56,7 @@
             line-height: 100%;
             letter-spacing: -0.72px;
             padding-top: 10px;
+
             .strike-through {
                 color: #64748b;
                 font-weight: 500;
@@ -55,7 +64,8 @@
                 text-decoration-line: line-through;
             }
         }
-        .size{
+
+        .size {
             color: #475569;
             font-family: Poppins;
             font-size: 19px;
@@ -66,10 +76,12 @@
             padding-bottom: 6.9984px;
             padding-top: 22px;
         }
-        .sizeBtn{
+
+        .sizeBtn {
             display: flex;
             gap: 15px;
-            .sizeCircles{
+
+            .sizeCircles {
                 background-color: #fff;
                 border: 1px solid #bfc0c6;
                 border-radius: 50px;
@@ -80,8 +92,9 @@
                 cursor: pointer;
                 color: #282c3f;
                 -webkit-box-flex: 0;
-                outline-color:#ff3f6c;
+                outline-color: #ff3f6c;
             }
+
             .sizeCircles:hover {
                 border: 1px solid #ff3f6c;
             }
@@ -93,8 +106,9 @@
                 border: 1px solid #ff3f6c;
                 background-color: #fff;
                 color: #ff3f6c !important;
-                
+
             }
+
             .sizeCircles.disabled {
                 background-color: #f0f0f0;
                 color: #aaa;
@@ -108,7 +122,7 @@
             }
         }
 
-        .addToCarBtn{
+        .addToCarBtn {
             display: flex;
             width: 136px;
             height: 43px;
@@ -121,8 +135,9 @@
             border: 1px solid #ff3e6c;
             margin-top: 20px;
             cursor: pointer;
-            width: 40%;
-            .addToCarText{
+            width: 58%;
+
+            .addToCarText {
                 color: #FFF;
                 text-align: center;
                 font-family: var(--font-family-sans, Poppins);
